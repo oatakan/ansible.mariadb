@@ -16,44 +16,8 @@ The following variables can be overridden:
 ## Features
 Does automatic check of root access and recover root account if no access is granted from content of .my.cnf
 
-# example playbook for this role:
-```yaml
-- name: Install and configure MariaDB Server
-  hosts: vm01
-  roles:
-   - role: js.mariadb
-      mariadb_open_firewall: true
-      mariadb_secure_installation: true
-      mariadb_root_password: 'nevermind!'
-      mariadb_db_create:
-       -  db1
-       -  db2
-
-      mariadb_db_remove:
-       -  database1
-       -  database2
-
-      mariadb_user_remove:
-        - tom
-        - mark
-
-      mariadb_user_create:
-        - name: worker1
-          password: krypt0
-          hosts:
-            - "localhost"
-          privs:
-            - "db1.*:ALL"
-            - "db2.*:SELECT,UPDATE"
-        - name: app1
-          password: krypt0n
-          hosts:
-            - "web1"
-            - "localhost"
-          privs:
-            - "*.*:ALL"
-...
-```
+# example playbook for this role
+Check the test directory for an example
 
 # License
 Copyright (c) Chris Ruettimann <chris@bitbull.ch>  
