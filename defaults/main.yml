@@ -1,0 +1,10 @@
+---
+# js.mariadb role defaults/main.yml
+# note: mysql -uroot -sNe"`mysql -uroot -se"SELECT CONCAT('SHOW GRANTS FOR \'',user,'\'@\'',host,'\';') FROM mysql.user;"`"
+mariadb_open_firewall: false
+mariadb_secure_installation: false
+mariadb_root_password: ''
+mariadb_db_create: []
+mariadb_db_remove: []
+mariadb_user_remove: []
+mariadb_user_create: {}
