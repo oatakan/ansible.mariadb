@@ -22,7 +22,7 @@ Does automatic check of root access and recover root account if no access is gra
   hosts: vm01
   roles:
    - role: js.mariadb
-      mariadb_open_firewall: false
+      mariadb_open_firewall: true
       mariadb_secure_installation: true
       mariadb_root_password: 'nevermind!'
       mariadb_db_create:
