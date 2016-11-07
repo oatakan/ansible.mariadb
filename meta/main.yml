@@ -2,7 +2,7 @@
 galaxy_info:
   author: Chris Ruettimann
   company: Bitbull Consulting
-  description: installation and configuration of mariadb
+  description: installation and configuration of mariadb (mysql)
   min_ansible_version: 1.7
   license: GPL
   platforms:

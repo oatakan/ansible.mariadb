@@ -4,7 +4,6 @@
 mariadb_open_firewall: false
 mariadb_secure_installation: false
 mariadb_root_password: ''
-mariadb_db_create: []
-mariadb_db_remove: []
-mariadb_user_remove: []
-mariadb_user_create: {}
+mariadb_databases: {}
+mariadb_users_create: { }
+mariadb_users_remove: { }

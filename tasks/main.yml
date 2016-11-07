@@ -1,20 +1,25 @@
 ---
 # install mariadb server
-- include: mariadb_install.yml
+- include: install.yml
+  tags: [install]
 
 # configure root account
-- include: mariadb_conf_root_access.yml
+- include: conf_root_access.yml
+  tags: [root]
 
 # secure mariadb installation
-- include: mariadb_secure.yml
+- include: secure.yml
   when: mariadb_secure_installation
+  tags: [secure]
 
 # create/remove databases
-- include: mariadb_dbconf.yml
+- include: database.yml
+  tags: [database]
 
 # create/remove users
-- include: mariadb_user_conf.yml
+- include: user_conf.yml
+  tags: [user]
 
 # open firewalld port
-- include: mariadb_firewalld.yml
-  when: mariadb_open_firewall
+- include: firewalld.yml
+  tags: [firewall]
