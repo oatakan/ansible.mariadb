@@ -23,6 +23,6 @@ Does automatic check of root access and recover root account if no access is gra
 
 
 # License
-https://opensource.org/licenses/MIT   
+https://opensource.org/licenses/LGPL-3.0
 Copyright (c) Chris Ruettimann <chris@bitbull.ch>  
 
