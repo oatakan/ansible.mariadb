@@ -20,6 +20,3 @@
 - include: user_conf.yml
   tags: [user]
 
-# open firewalld port
-- include: firewalld.yml
-  tags: [firewall]

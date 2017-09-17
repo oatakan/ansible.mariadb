@@ -4,7 +4,6 @@
   hosts: vm01
   roles:
     - role: js.mariadb
-      mariadb_open_firewall: yes
       mariadb_secure_installation: yes
       mariadb_root_password: 'nevermind!'
       mariadb_databases:

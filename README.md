@@ -6,7 +6,6 @@
 ## Role Variables
 
 The following variables can be overridden:
- * `mariadb_open_firewall`: Default: false. open/close firewalld port 3306
  * `mariadb_secure_installation`: Default: false. Similar to `mysql_secure_installation`
  * `mariadb_root_password`: Default: ''.
  * `mariadb_databases`: Default: {} . Dictionary with databases.
