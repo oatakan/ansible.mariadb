@@ -21,5 +21,5 @@
     state: absent
   with_items:
     - "{{ mariadb_users_remove }}"
-  when: mariadb_users_remove is defined
+  when: mariadb_users_remove|length > 0
 
