@@ -13,9 +13,9 @@ The following variables can be overridden:
  * `mariadb_users_remove`: Default: {}. Dictionary of users to remove.
 
 ## Features
-Does automatic check of root access and recover root account if no access is granted from content of .my.cnf
+Does automatic check root access and recover root account if no access is granted from content of .my.cnf
 
-# example playbooks for this role are located in `test` folder:
+## example playbooks for this role are located in `test` folder:
  * `playbook_mariadb_minimal.yml`: Minimal role for testing
  * `playbook_mariadb.yml`: Real life example
  * `playbook_mariadb_full.yml`: Full example with all possible vars.  
