@@ -1,7 +1,7 @@
 ---
 # js.mariadb role defaults/main.yml
 # note: mysql -uroot -sNe"`mysql -uroot -se"SELECT CONCAT('SHOW GRANTS FOR \'',user,'\'@\'',host,'\';') FROM mysql.user;"`"
-mariadb_secure_installation: false
+mariadb_secure_installation: true
 mariadb_root_password: ''
 mariadb_databases: {}
 mariadb_users_create: { }
