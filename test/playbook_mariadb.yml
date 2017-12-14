@@ -3,7 +3,7 @@
 - name: Install and configure MariaDB Server
   hosts: vm01
   roles:
-    - role: js.mariadb
+    - role: joe-speedboat.mariadb
       mariadb_secure_installation: yes
       mariadb_root_password: 'nevermind!'
       mariadb_databases:

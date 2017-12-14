@@ -1,10 +1,10 @@
 ---
 # file: test/playbook_mariadb_full.yml
 - name: Install and configure MariaDB Server
-  hosts: vm01
+  hosts: vm06
   roles:
     - role: joe-speedboat.mariadb
-      mariadb_secure_installation: yes    #default: no
+      mariadb_secure_installation: yes    #default: yes
       mariadb_root_password: 'nevermind!' #default: ''
       mariadb_databases:
         - name: db_test                   #default: undefined
