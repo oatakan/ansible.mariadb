@@ -1,0 +1,5 @@
+# ansible config: /etc/my.cnf.d/custom.cnf
+[mysqld]
+{% for mysqld_config in mariadb_mysqld_config %}
+{{ mysqld_config }}
+{% endfor %}
