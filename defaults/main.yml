@@ -6,3 +6,4 @@ mariadb_root_password: ''
 mariadb_databases: {}
 mariadb_users_create: { }
 mariadb_users_remove: { }
+mariadb_mysqld_config: {}
