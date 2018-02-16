@@ -23,6 +23,7 @@
 
     - name: Set root Password
       command: mysql -u root mysql --execute="update user set password=PASSWORD('{{ mariadb_root_password }}') where User='root';"
+      no_log: true
 
     - name: Stop MySQL
       service: name=mariadb state=stopped
@@ -46,6 +47,7 @@
 - block:
   - name: set root user password
     command: mysql -u root mysql --execute="update user set password=PASSWORD('{{ mariadb_root_password }}') where User='root';"
+    no_log: true
 
   - name: sql query flush
     command:  mysql -u root --execute="FLUSH PRIVILEGES"
