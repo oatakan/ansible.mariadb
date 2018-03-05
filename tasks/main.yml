@@ -1,22 +1,22 @@
 ---
 # install mariadb server
-- include: install.yml
+- include_tasks: install.yml
   tags: [install]
 
 # configure root account
-- include: conf_root_access.yml
+- include_tasks: conf_root_access.yml
   tags: [root]
 
 # secure mariadb installation
-- include: secure.yml
+- include_tasks: secure.yml
   when: mariadb_secure_installation
   tags: [secure]
 
 # create/remove databases
-- include: database.yml
+- include_tasks: database.yml
   tags: [database]
 
 # create/remove users
-- include: user_conf.yml
+- include_tasks: user_conf.yml
   tags: [user]
 
