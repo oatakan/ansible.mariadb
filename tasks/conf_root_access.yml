@@ -7,9 +7,6 @@
   changed_when: False
 
 - block:
-    - name: Configure /root/.my.cnf
-      template: src=my.cnf.j2 dest=/root/.my.cnf owner=root group=root mode=0600
-
     - name: Create Systemd mariadb.service which respects env
       template: src=mariadb.service.j2 dest=/etc/systemd/system/mariadb.service owner=root group=root mode=0644
 
