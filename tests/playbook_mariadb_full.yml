@@ -28,6 +28,7 @@
         - name: user2                     #default: undefined
           host: web1                      #default: localhost
       db_mysqld_config:
+        - default-storage-engine=InnoDB
         - max_allowed_packet=64M
         - query_cache_size=32M
         - innodb_log_file_size=256M

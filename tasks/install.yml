@@ -23,4 +23,4 @@
     name: MySQL-python
     state: installed
   when: mariadb_root_password is defined
-
+...

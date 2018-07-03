@@ -22,4 +22,4 @@
   with_items:
     - "{{ mariadb_users_remove }}"
   when: mariadb_users_remove|length > 0
-
+...
