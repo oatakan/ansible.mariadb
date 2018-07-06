@@ -3,5 +3,5 @@
 - name: Install and configure MariaDB Server
   hosts: vm01
   roles:
-    - role: joe_speedboat.ansible_mariadb
+    - role: joe-speedboat.ansible_mariadb
 ...
