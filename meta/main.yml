@@ -1,10 +1,11 @@
 ---
 galaxy_info:
   author: Chris Ruettimann
-  company: Bitbull Consulting
+  company: uniQconsulting
   description: installation and configuration of mariadb (mysql)
-  min_ansible_version: 1.7
-  license: GPL
+  role_name: mariadb
+  min_ansible_version: 2.4
+  license: GPLv3
   platforms:
   - name: EL
     versions:

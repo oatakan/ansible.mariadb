@@ -3,7 +3,7 @@
 - name: Install and configure MariaDB Server
   hosts: vm01
   roles:
-    - role: joe-speedboat.ansible_mariadb
+    - role: uniQconsulting.mariadb
       mariadb_secure_installation: yes    #default: no
       mariadb_root_password: 'nevermind!' #default: ''
       mariadb_databases:
