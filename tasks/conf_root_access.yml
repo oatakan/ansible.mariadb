@@ -54,7 +54,7 @@
   - name: sql query flush
     command:  mysql -u root --execute="FLUSH PRIVILEGES"
     changed_when: False
-  when: mariadb_access_test|succeeded
+  when: mariadb_access_test is succeeded
   tags: [root_change]
 
 - name: Configure /root/.my.cnf
